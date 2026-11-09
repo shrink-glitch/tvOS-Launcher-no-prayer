@@ -2386,12 +2386,6 @@ public class SettingsActivity extends Activity {
                 });
 
         section(tr("DASHBOARD WIDGETS (4 HORIZONTAL TILES)", "PANEL WIDGET'LARI (4 YATAY KUTU)"));
-        row("🕌  " + I18n.t(this, "dash_prayer_times"),
-                () -> HomeDashboard.isWidgetPrayerEnabled(this) ? tr("On", "Açık") : tr("Off", "Kapalı"),
-                () -> {
-                    HomeDashboard.setWidgetPrayerEnabled(this, !HomeDashboard.isWidgetPrayerEnabled(this));
-                    refreshAll();
-                });
         row("⚽  " + I18n.t(this, "dash_football"),
                 () -> HomeDashboard.isWidgetFootballEnabled(this) ? tr("On", "Açık") : tr("Off", "Kapalı"),
                 () -> {

@@ -137,7 +137,7 @@ public final class HomeDashboard {
     }
 
     public static boolean isWidgetPrayerEnabled(Context c) {
-        return prefs(c).getBoolean(KEY_W_PRAYER, true);
+        return prefs(c).getBoolean(KEY_W_PRAYER, false);
     }
 
     public static void setWidgetPrayerEnabled(Context c, boolean en) {
